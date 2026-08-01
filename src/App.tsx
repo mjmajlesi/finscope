@@ -5,19 +5,22 @@ import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Container from "./components/Container";
+import { WatchlistProvider } from "./context/WatchlistProvider";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Container>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-        <Footer />
-      </Container>
-    </BrowserRouter>
+    <WatchlistProvider>
+      <BrowserRouter>
+        <Container>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+          <Footer />
+        </Container>
+      </BrowserRouter>
+    </WatchlistProvider>
   );
 }
 
