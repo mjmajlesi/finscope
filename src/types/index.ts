@@ -13,6 +13,7 @@ export interface Coin {
   price_change_percentage_24h?: number;
   price_change_percentage_1h_in_currency?: number;
   price_change_percentage_7d_in_currency?: number;
+  sparkline_in_7d?: { price: number[] };
   circulating_supply?: number;
   total_supply?: number;
   max_supply?: number;
