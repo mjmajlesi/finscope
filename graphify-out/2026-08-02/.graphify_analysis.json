@@ -1,0 +1,351 @@
+{
+  "communities": {
+    "0": [
+      "src_api_coingecko",
+      "src_api_coingecko_coingeckoapierror",
+      "src_api_coingecko_coingeckoapierror_constructor",
+      "src_api_coingecko_convertcurrency",
+      "src_api_coingecko_exchangeapierror",
+      "src_api_coingecko_exchangeapierror_constructor",
+      "src_api_coingecko_fetchcoinchart",
+      "src_api_coingecko_fetchcoinsearch",
+      "src_api_coingecko_fetchexchangerates",
+      "src_api_coingecko_fetchmarketsummary",
+      "src_api_coingecko_fetchtopcoins",
+      "src_hooks_usecoinchart",
+      "src_hooks_usecoinchart_usecoinchart",
+      "src_hooks_useexchangerates",
+      "src_hooks_useexchangerates_usecurrencyconverter",
+      "src_hooks_useexchangerates_useexchangerates",
+      "src_hooks_usemarketdata",
+      "src_hooks_usemarketdata_usemarketdata",
+      "src_types_index",
+      "src_types_index_coin",
+      "src_types_index_coinchart",
+      "src_types_index_coindetail",
+      "src_types_index_coinmarketdata",
+      "src_types_index_currencypair",
+      "src_types_index_exchangerates",
+      "src_types_index_fiat_currencies",
+      "src_types_index_fiatcurrency",
+      "src_types_index_marketsummary",
+      "src_types_index_popular_crypto",
+      "src_types_index_popularcrypto",
+      "src_types_index_time_range_days",
+      "src_types_index_timerange",
+      "src_types_index_watchlistitem"
+    ],
+    "1": [
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_es2022",
+      "ref_src",
+      "ref_vite_client",
+      "tsconfig_app",
+      "tsconfig_app_compileroptions",
+      "tsconfig_app_compileroptions_allowimportingtsextensions",
+      "tsconfig_app_compileroptions_erasablesyntaxonly",
+      "tsconfig_app_compileroptions_jsx",
+      "tsconfig_app_compileroptions_lib",
+      "tsconfig_app_compileroptions_module",
+      "tsconfig_app_compileroptions_moduledetection",
+      "tsconfig_app_compileroptions_moduleresolution",
+      "tsconfig_app_compileroptions_noemit",
+      "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_app_compileroptions_nouncheckedsideeffectimports",
+      "tsconfig_app_compileroptions_nounusedlocals",
+      "tsconfig_app_compileroptions_nounusedparameters",
+      "tsconfig_app_compileroptions_skiplibcheck",
+      "tsconfig_app_compileroptions_strict",
+      "tsconfig_app_compileroptions_target",
+      "tsconfig_app_compileroptions_tsbuildinfofile",
+      "tsconfig_app_compileroptions_types",
+      "tsconfig_app_compileroptions_usedefineforclassfields",
+      "tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "tsconfig_app_include"
+    ],
+    "2": [
+      "eslint",
+      "eslint_js",
+      "eslint_plugin_react_hooks",
+      "eslint_plugin_react_refresh",
+      "globals",
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_globals",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_devdependencies_typescript_eslint",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript",
+      "typescript_eslint",
+      "vite",
+      "vitejs_plugin_react"
+    ],
+    "3": [
+      "ref_es2023",
+      "ref_node",
+      "ref_vite_config_ts",
+      "tsconfig_node",
+      "tsconfig_node_compileroptions",
+      "tsconfig_node_compileroptions_allowimportingtsextensions",
+      "tsconfig_node_compileroptions_erasablesyntaxonly",
+      "tsconfig_node_compileroptions_lib",
+      "tsconfig_node_compileroptions_module",
+      "tsconfig_node_compileroptions_moduledetection",
+      "tsconfig_node_compileroptions_moduleresolution",
+      "tsconfig_node_compileroptions_noemit",
+      "tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_node_compileroptions_nouncheckedsideeffectimports",
+      "tsconfig_node_compileroptions_nounusedlocals",
+      "tsconfig_node_compileroptions_nounusedparameters",
+      "tsconfig_node_compileroptions_skiplibcheck",
+      "tsconfig_node_compileroptions_strict",
+      "tsconfig_node_compileroptions_target",
+      "tsconfig_node_compileroptions_tsbuildinfofile",
+      "tsconfig_node_compileroptions_types",
+      "tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "tsconfig_node_include"
+    ],
+    "4": [
+      "lucide_react",
+      "package_dependencies",
+      "package_dependencies_lucide_react",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_router",
+      "package_dependencies_react_router_dom",
+      "package_dependencies_recharts",
+      "package_dependencies_tailwindcss",
+      "package_dependencies_tailwindcss_vite",
+      "react",
+      "react_dom",
+      "react_router",
+      "react_router_dom",
+      "recharts",
+      "tailwindcss",
+      "tailwindcss_vite"
+    ],
+    "5": [
+      "src_app",
+      "src_app_app",
+      "src_components_container",
+      "src_components_container_container",
+      "src_components_container_ichildren",
+      "src_components_footer",
+      "src_components_footer_footer",
+      "src_components_home",
+      "src_components_home_home",
+      "src_components_login",
+      "src_components_login_login",
+      "src_components_navbar",
+      "src_components_navbar_navbar",
+      "src_components_tradingvalue",
+      "src_components_tradingvalue_tradingvalue",
+      "src_main"
+    ],
+    "6": [
+      "package",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_preview",
+      "package_type",
+      "package_version"
+    ],
+    "7": [
+      "src_context_watchlistcontext",
+      "src_context_watchlistcontext_watchlistcontext",
+      "src_context_watchlistcontext_watchlistcontextvalue",
+      "src_context_watchlistprovider",
+      "src_context_watchlistprovider_watchlistprovider",
+      "src_hooks_usewatchlist",
+      "src_hooks_usewatchlist_getinitialwatchlist",
+      "src_hooks_usewatchlist_usewatchlist",
+      "src_hooks_usewatchlistcontext",
+      "src_hooks_usewatchlistcontext_usewatchlistcontext"
+    ],
+    "8": [
+      "tsconfig",
+      "tsconfig_files",
+      "tsconfig_references"
+    ],
+    "9": [
+      "eslint_config"
+    ],
+    "10": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.09848484848484848,
+    "1": 0.07407407407407407,
+    "2": 0.08,
+    "3": 0.08695652173913043,
+    "4": 0.11764705882352941,
+    "5": 0.18333333333333332,
+    "6": 0.2,
+    "7": 0.3111111111111111,
+    "8": 0.6666666666666666,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 20
+    },
+    {
+      "id": "tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "src_hooks_usewatchlist_usewatchlist",
+      "label": "useWatchlist()",
+      "degree": 4
+    },
+    {
+      "id": "src_types_index_coin",
+      "label": "Coin",
+      "degree": 4
+    },
+    {
+      "id": "tsconfig_app_compileroptions_lib",
+      "label": "lib",
+      "degree": 4
+    },
+    {
+      "id": "src_api_coingecko_fetchtopcoins",
+      "label": "fetchTopCoins()",
+      "degree": 3
+    },
+    {
+      "id": "src_api_coingecko_fetchcoinchart",
+      "label": "fetchCoinChart()",
+      "degree": 3
+    },
+    {
+      "id": "src_api_coingecko_fetchexchangerates",
+      "label": "fetchExchangeRates()",
+      "degree": 3
+    },
+    {
+      "id": "src_api_coingecko_convertcurrency",
+      "label": "convertCurrency()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "useMarketData()",
+      "target": "fetchTopCoins()",
+      "source_files": [
+        "src/hooks/useMarketData.ts",
+        "src/api/coingecko.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "useCoinChart()",
+      "target": "fetchCoinChart()",
+      "source_files": [
+        "src/hooks/useCoinChart.ts",
+        "src/api/coingecko.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "useExchangeRates()",
+      "target": "fetchExchangeRates()",
+      "source_files": [
+        "src/hooks/useExchangeRates.ts",
+        "src/api/coingecko.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "useCurrencyConverter()",
+      "target": "convertCurrency()",
+      "source_files": [
+        "src/hooks/useExchangeRates.ts",
+        "src/api/coingecko.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "WatchlistProvider()",
+      "target": "useWatchlist()",
+      "source_files": [
+        "src/context/WatchlistProvider.tsx",
+        "src/hooks/useWatchlist.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `devDependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.067) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `dependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.050) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `name`, `private`, `version` to the rest of the system?",
+      "why": "81 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `index.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09848484848484848 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `devDependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

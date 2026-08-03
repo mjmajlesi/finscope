@@ -1,0 +1,117 @@
+{
+  "eslint.config.js": {
+    "mtime": 1766542622.4570758,
+    "ast_hash": "b8893da386a89dfd3672dad848f4ec7e",
+    "semantic_hash": "b8893da386a89dfd3672dad848f4ec7e"
+  },
+  "package.json": {
+    "mtime": 1785293034.4632845,
+    "ast_hash": "ed660648f9d478cb10a4bf65e241f730",
+    "semantic_hash": "ed660648f9d478cb10a4bf65e241f730"
+  },
+  "src/App.tsx": {
+    "mtime": 1785458414.2713861,
+    "ast_hash": "164049d1cbf4ab6697e33595d1f35039",
+    "semantic_hash": "164049d1cbf4ab6697e33595d1f35039"
+  },
+  "src/api/coingecko.ts": {
+    "mtime": 1785294053.3795686,
+    "ast_hash": "98b8fb63b072104a7321bf9b44f7724f",
+    "semantic_hash": "98b8fb63b072104a7321bf9b44f7724f"
+  },
+  "src/components/Container.tsx": {
+    "mtime": 1767001722.685865,
+    "ast_hash": "909109f17123e390d393f63f1518ab87",
+    "semantic_hash": "909109f17123e390d393f63f1518ab87"
+  },
+  "src/components/Footer.tsx": {
+    "mtime": 1767000582.4499538,
+    "ast_hash": "55317562a09f1eeb32ccffbbc242b6ad",
+    "semantic_hash": "55317562a09f1eeb32ccffbbc242b6ad"
+  },
+  "src/components/Home.tsx": {
+    "mtime": 1767002733.8187833,
+    "ast_hash": "48f1b5c6ab13761a05eab0d0949f01a7",
+    "semantic_hash": "48f1b5c6ab13761a05eab0d0949f01a7"
+  },
+  "src/components/Login.tsx": {
+    "mtime": 1769744919.0920522,
+    "ast_hash": "686218a925a0f51e2d2b2668d17da037",
+    "semantic_hash": "686218a925a0f51e2d2b2668d17da037"
+  },
+  "src/components/Navbar.tsx": {
+    "mtime": 1769013162.7651255,
+    "ast_hash": "9813371c76ec550a654464af02ec99f0",
+    "semantic_hash": "9813371c76ec550a654464af02ec99f0"
+  },
+  "src/components/TradingValue.tsx": {
+    "mtime": 1767002750.4395602,
+    "ast_hash": "8f8210674d2b89db5b22688ef60c4f93",
+    "semantic_hash": "8f8210674d2b89db5b22688ef60c4f93"
+  },
+  "src/context/WatchlistContext.tsx": {
+    "mtime": 1785458439.6164353,
+    "ast_hash": "8319d531d263ca3f9b088b1eaa27df00",
+    "semantic_hash": "8319d531d263ca3f9b088b1eaa27df00"
+  },
+  "src/context/WatchlistProvider.tsx": {
+    "mtime": 1785458400.5579414,
+    "ast_hash": "55168e6d6f006b55854c19d8481d160f",
+    "semantic_hash": "55168e6d6f006b55854c19d8481d160f"
+  },
+  "src/hooks/useCoinChart.ts": {
+    "mtime": 1785457287.5889385,
+    "ast_hash": "a3d040b76876d313b33fb9e9d43f997b",
+    "semantic_hash": "a3d040b76876d313b33fb9e9d43f997b"
+  },
+  "src/hooks/useExchangeRates.ts": {
+    "mtime": 1785458851.3404052,
+    "ast_hash": "87853c69ec386ac7578f6dea90abf5c4",
+    "semantic_hash": "87853c69ec386ac7578f6dea90abf5c4"
+  },
+  "src/hooks/useMarketData.ts": {
+    "mtime": 1785293687.056181,
+    "ast_hash": "32789e2127b6d3410d5aa3ec5e810f9b",
+    "semantic_hash": "32789e2127b6d3410d5aa3ec5e810f9b"
+  },
+  "src/hooks/useWatchlist.ts": {
+    "mtime": 1785294117.7638905,
+    "ast_hash": "b504174d664c7312b2c98fd84f6452cb",
+    "semantic_hash": "b504174d664c7312b2c98fd84f6452cb"
+  },
+  "src/hooks/useWatchlistContext.ts": {
+    "mtime": 1785458182.4988496,
+    "ast_hash": "8c51aa54df8c5b19fd288a3443a5ef98",
+    "semantic_hash": "8c51aa54df8c5b19fd288a3443a5ef98"
+  },
+  "src/main.tsx": {
+    "mtime": 1766542622.6141217,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
+  },
+  "src/types/index.ts": {
+    "mtime": 1785293552.4256203,
+    "ast_hash": "aeae2122fc277fcfd587b24cdcf8e692",
+    "semantic_hash": "aeae2122fc277fcfd587b24cdcf8e692"
+  },
+  "tsconfig.app.json": {
+    "mtime": 1766542622.4941502,
+    "ast_hash": "06fed9d2d293837c0571529eaae7204a",
+    "semantic_hash": "06fed9d2d293837c0571529eaae7204a"
+  },
+  "tsconfig.json": {
+    "mtime": 1766542622.5040216,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "tsconfig.node.json": {
+    "mtime": 1766542622.5141873,
+    "ast_hash": "eec85c9d7c6b599801557f1afd86672c",
+    "semantic_hash": "eec85c9d7c6b599801557f1afd86672c"
+  },
+  "vite.config.ts": {
+    "mtime": 1767001531.687189,
+    "ast_hash": "5bfc466d0368b3fecc9bb4e4a080df2b",
+    "semantic_hash": "5bfc466d0368b3fecc9bb4e4a080df2b"
+  }
+}

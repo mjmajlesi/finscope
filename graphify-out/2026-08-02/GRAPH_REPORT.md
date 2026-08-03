@@ -1,16 +1,15 @@
-# Graph Report - finscope  (2026-08-02)
+# Graph Report - .  (2026-07-31)
 
 ## Corpus Check
-- 42 files · ~8,035 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
-- 228 nodes · 320 edges · 18 communities (17 shown, 1 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.5)
+- 166 nodes · 191 edges · 11 communities (10 shown, 1 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5993cdf3`
+- Built from commit: `fcf97cc9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,43 +23,39 @@
 - package.json
 - WatchlistProvider.tsx
 - tsconfig.json
-- Dashboard.tsx
-- MarketTable.tsx
-- CurrencyConverter.tsx
-- React + TypeScript + Vite
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 20 edges
 2. `compilerOptions` - 18 edges
-3. `Coin` - 9 edges
-4. `useMarketData()` - 8 edges
-5. `useAuth()` - 7 edges
-6. `scripts` - 5 edges
-7. `useWatchlistContext()` - 5 edges
-8. `fetchTopCoins()` - 4 edges
-9. `fetchCoinChart()` - 4 edges
-10. `SkeletonLoader()` - 4 edges
+3. `scripts` - 5 edges
+4. `useWatchlist()` - 4 edges
+5. `Coin` - 4 edges
+6. `lib` - 4 edges
+7. `fetchTopCoins()` - 3 edges
+8. `fetchCoinChart()` - 3 edges
+9. `fetchExchangeRates()` - 3 edges
+10. `convertCurrency()` - 3 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `ProtectedRoute()` --calls--> `useAuth()`  [EXTRACTED]
-  src/App.tsx → src/hooks/useAuth.ts
 - `useMarketData()` --calls--> `fetchTopCoins()`  [EXTRACTED]
   src/hooks/useMarketData.ts → src/api/coingecko.ts
-- `MarketTableProps` --references--> `Coin`  [EXTRACTED]
-  src/components/MarketTable.tsx → src/types/index.ts
-- `PriceCardProps` --references--> `Coin`  [EXTRACTED]
-  src/components/PriceCard.tsx → src/types/index.ts
-- `Watchlist()` --calls--> `useWatchlistContext()`  [EXTRACTED]
-  src/pages/Watchlist.tsx → src/hooks/useWatchlistContext.ts
+- `useCoinChart()` --calls--> `fetchCoinChart()`  [EXTRACTED]
+  src/hooks/useCoinChart.ts → src/api/coingecko.ts
+- `useExchangeRates()` --calls--> `fetchExchangeRates()`  [EXTRACTED]
+  src/hooks/useExchangeRates.ts → src/api/coingecko.ts
+- `useCurrencyConverter()` --calls--> `convertCurrency()`  [EXTRACTED]
+  src/hooks/useExchangeRates.ts → src/api/coingecko.ts
+- `WatchlistProvider()` --calls--> `useWatchlist()`  [EXTRACTED]
+  src/context/WatchlistProvider.tsx → src/hooks/useWatchlist.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (18 total, 1 thin omitted)
+## Communities (11 total, 1 thin omitted)
 
 ### Community 0 - "index.ts"
-Cohesion: 0.09
-Nodes (25): CoinGeckoAPIError, ExchangeAPIError, fetchCoinChart(), fetchExchangeRates(), fetchTopCoins(), generateMockChartData(), MOCK_COINS, MOCK_EXCHANGE_RATES (+17 more)
+Cohesion: 0.10
+Nodes (24): CoinGeckoAPIError, convertCurrency(), ExchangeAPIError, fetchCoinChart(), fetchExchangeRates(), fetchTopCoins(), useCoinChart(), useCurrencyConverter() (+16 more)
 
 ### Community 1 - "compilerOptions"
 Cohesion: 0.07
@@ -79,35 +74,19 @@ Cohesion: 0.12
 Nodes (17): lucide-react, dependencies, lucide-react, react, react-dom, react-router, react-router-dom, recharts (+9 more)
 
 ### Community 5 - "App.tsx"
-Cohesion: 0.19
-Nodes (11): App(), ProtectedRoute(), Container(), Ichildren, Footer(), Navbar(), AuthContext, AuthContextType (+3 more)
+Cohesion: 0.18
+Nodes (8): App(), Container(), Ichildren, Footer(), Home(), Login(), Navbar(), TradingValue()
 
 ### Community 6 - "package.json"
 Cohesion: 0.20
 Nodes (9): name, private, scripts, build, dev, lint, preview, type (+1 more)
 
 ### Community 7 - "WatchlistProvider.tsx"
-Cohesion: 0.36
+Cohesion: 0.31
 Nodes (5): WatchlistContext, WatchlistContextValue, WatchlistProvider(), getInitialWatchlist(), useWatchlist()
 
-### Community 11 - "Dashboard.tsx"
-Cohesion: 0.19
-Nodes (12): SearchBar(), SearchBarProps, SkeletonLoader(), SkeletonLoaderProps, StatCard(), StatCardProps, useMarketData(), Dashboard() (+4 more)
-
-### Community 12 - "MarketTable.tsx"
-Cohesion: 0.16
-Nodes (14): COLUMNS, formatNum(), MarketTable(), MarketTableProps, SortKey, MiniChart(), MiniChartProps, PriceCard() (+6 more)
-
-### Community 13 - "CurrencyConverter.tsx"
-Cohesion: 0.24
-Nodes (8): convertCurrency(), Currency, CurrencyConverter(), CurrencyConverterProps, FIAT_CURRENCIES, POPULAR_CRYPTO, useCurrencyConverter(), Converter()
-
-### Community 14 - "React + TypeScript + Vite"
-Cohesion: 0.50
-Nodes (3): Expanding the ESLint configuration, React Compiler, React + TypeScript + Vite
-
 ## Knowledge Gaps
-- **98 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+93 more)
+- **81 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+76 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -115,13 +94,13 @@ Nodes (3): Expanding the ESLint configuration, React Compiler, React + TypeScrip
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `devDependencies` connect `devDependencies` to `package.json`?**
-  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `dependencies` to `package.json`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.050) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _98 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _81 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `index.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.09411764705882353 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09848484848484848 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `devDependencies` be split into smaller, more focused modules?**
