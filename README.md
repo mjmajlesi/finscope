@@ -1,73 +1,130 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📊 FinScope
 
-Currently, two official plugins are available:
+**Financial Market Dashboard & Currency Converter**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, real-time cryptocurrency dashboard built with React, TypeScript, and Tailwind CSS.
+Track live prices, analyze charts, convert currencies, and build your personal watchlist.
 
-## React Compiler
+[![Deploy to GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?logo=github)](https://mjmajlesi.github.io/finscope/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)](https://vite.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss)](https://tailwindcss.com)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Feature | Description |
+|---------|-------------|
+| 🏠 **Dashboard** | Real-time top 20 crypto prices, market stats, search & filters |
+| 📈 **Markets** | Interactive line charts, sortable market table, coin detail pages |
+| 💱 **Converter** | Fiat & crypto conversion with 40+ currencies |
+| ⭐ **Watchlist** | Star-based coin tracking with persistent localStorage |
+| 🔐 **Authentication** | Login/logout with protected watchlist route |
+| 📱 **Responsive** | Mobile-first design, works beautifully on all devices |
+| 🎨 **Dark Theme** | Modern dark UI with copper accent color |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Quick Start
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone the repository
+git clone https://github.com/mjmajlesi/finscope.git
+cd finscope
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+finscope/
+├── src/
+│   ├── api/              # API clients & mock data
+│   │   ├── coingecko.ts  # CoinGecko + Frankfurter API
+│   │   └── mockData.ts   # Fallback data for offline use
+│   ├── components/       # Reusable UI components
+│   │   ├── MarketChart.tsx
+│   │   ├── MarketTable.tsx
+│   │   ├── CurrencyConverter.tsx
+│   │   └── ...
+│   ├── context/          # React Context providers
+│   │   ├── AuthContext.tsx
+│   │   └── WatchlistContext.tsx
+│   ├── hooks/            # Custom React hooks
+│   ├── pages/            # Route-level components
+│   │   ├── Dashboard.tsx
+│   │   ├── Markets.tsx
+│   │   ├── Converter.tsx
+│   │   ├── Watchlist.tsx
+│   │   └── Login.tsx
+│   ├── types/            # TypeScript definitions
+│   ├── App.tsx           # Root component with routing
+│   └── main.tsx          # Entry point
+├── .github/workflows/    # GitHub Actions deployment
+└── package.json
+```
+
+## 🎨 Theme
+
+The app uses a custom dark theme with CSS variables:
+
+| Variable | Color | Usage |
+|----------|-------|-------|
+| `--color-brand` | `#C2C20A` | Copper/gold accent |
+| `--color-bg-main` | `#0F1117` | Main background |
+| `--color-bg-card` | `#1A1D26` | Card backgrounds |
+| `--color-status-up` | `#16C784` | Positive/green |
+| `--color-status-down` | `#EA3943` | Negative/red |
+
+## 📊 API Integration
+
+**Free APIs, no keys required:**
+
+- **[CoinGecko API](https://www.coingecko.com/en/api)** — Live crypto prices, charts, market data
+- **[Frankfurter API](https://api.frankfurter.app)** — Real-time exchange rates
+
+The app gracefully falls back to mock data if APIs are unavailable (e.g., geo-restrictions).
+
+## 🌐 Live Demo
+
+**[https://mjmajlesi.github.io/finscope/](https://mjmajlesi.github.io/finscope/)**
+
+## 📸 Screenshots
+
+> Dashboard with live prices and sparkline charts
+
+![Dashboard](./public/images/Home.png)
+
+> Markets page with interactive line chart and sortable table
+
+![Markets](./public/images/Markets.png)
+
+> Chart view with coin details and historical price graph
+
+![Chart](./public/images/Chart.png)
+
+
+## 🛠 Tech Stack
+
+- **React 19** — Latest React with concurrent features
+- **TypeScript 5** — End-to-end type safety
+- **Vite 7** — Lightning-fast build tool
+- **Tailwind CSS 4** — Utility-first styling with custom theme
+- **Recharts** — Beautiful, responsive charts
+- **Lucide React** — Clean, consistent icons
+- **React Router 7** — Client-side routing with HashRouter
